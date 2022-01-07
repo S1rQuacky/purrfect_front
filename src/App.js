@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+//Components
+import Main from "./components/main";
+import Nav from "./components/nav";
+import AllLocations from "./pages/AllLocations";
+import LocForm from "./pages/LocationForm";
+import ShowLocation from "./pages/ShowLocation";
 
-function App() {
+//React and Hooks
+import React, { useState, useEffect } from "react";
+
+//Components of React Router
+import { Route, Switch } from "react-router-dom";
+
+function App(props) {
+
+  //My API
+  const url = "https://your-purrfect-getaway.herokuapp.com/locations/";
+
+  //State to Hold list of locations
+  const [location, setLocation] = useState([]);
+
+  ////////////
+  //Functions
+  ////////////
+
+  ////////////
+  //useEffects
+  ////////////
+
+  /////////////
+  //Returned JSX
+  /////////////
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Your Purrfect Getaway</h1>
+      <Switch>
+        
+      </Switch>
+      
     </div>
   );
 }
