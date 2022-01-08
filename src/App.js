@@ -31,16 +31,16 @@ const getLocations = async () => {
   setLocations(data);
 };
 //create new location
-const addLocation = async (newLocation) => {
-  const response = await fetch(url, {
-    method: "post",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(newLocation),
-  });
-  getLocations();
-};
+// const addLocation = async (newLocation) => {
+//   const response = await fetch(url, {
+//     method: "post",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(newLocation),
+//   });
+//   getLocations();
+// };
 //edit locations
 const getEditLocation = (loc) => {
   setEditLocation(loc);
@@ -58,13 +58,13 @@ const updateLocation = async (loc) => {
   getLocations()
 };
 //delete 
-const deleteLocation = async (loc) => {
-  const response = await fetch(url + loc.id + "/", {
-    method: "delete",
-  });
-  getLocations();
-  props.history.push("/");
-};
+// const deleteLocation = async (loc) => {
+//   const response = await fetch(url + loc.id + "/", {
+//     method: "delete",
+//   });
+//   getLocations();
+//   props.history.push("/");
+// };
   ////////////
   //useEffects
   ////////////
@@ -80,8 +80,6 @@ useEffect(() => {getLocations()}, []);
         <Route exact path="/" render={(routerProps) => <Main {...routerProps} allLocations={locations}/>} />
         <Route path="/locations/:id" render={(routerProps) => (
           <ShowLocation {...routerProps} oneLocation={locations} getLoc={getLocations} url={url}/>)}/>
-        <Route path="/new" render={(routerProps) => <LocForm {...routerProps}/>}/>
-        <Route path="/edit" render={(routerProps) => <LocForm {...routerProps}/>}/>
       </Switch>   
       
     </div>

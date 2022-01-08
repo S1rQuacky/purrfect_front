@@ -9,11 +9,18 @@ function ShowLocation({match, url}) {
     const getLocations = async () => {
         const response = await fetch(url);
         const data = await response.json();
-        console.log('data', data)
         const id = parseInt(match.params.id);
         setLocs(data.find(element => element.id === id))
     };
 
+    //delete
+    const deleteLocation = async (loc) => {
+        const response = await fetch(url + match.params.id + "/", {
+          method: "delete",
+        });
+        // getLocations();
+        // props.history.push("/");
+      };
     /////////
     //styles
     /////////
@@ -29,6 +36,9 @@ function ShowLocation({match, url}) {
     const render = <div style={divi}>
                     <h1>{locs?.name}</h1>
                     <h2>{locs?.description}</h2>
+                    <Link to="/">
+                    <button onClick={deleteLocation}>Delete</button>
+                    </Link>
                     <Link to="/">
                         <button>Home</button>
                     </Link>

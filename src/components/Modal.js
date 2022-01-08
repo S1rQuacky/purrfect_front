@@ -10,7 +10,7 @@ function Modal ({open, onClose}){
         setFormData({ ...formData, [event.target.name]: event.target.value });
     };
     
-    const addRecord = async (newRecord) => {
+    const addRecord = async () => {
         const response = await fetch(url, {
             method: "post",
             headers: {
