@@ -1,0 +1,55 @@
+.inputForm {
+    display: inline-flex;
+    padding: 5px;
+    margin-top: 5px;
+    width: 99%;
+}
+
+input {
+    display:inline-block;
+    padding: 15px 10px;
+    line-height: 14%;
+}
+
+.form{
+    display: block;
+    background-color: rgba(0, 0, 0, .05);
+    padding: 5px;
+    margin-top: 5px;
+    width: 99%;
+    /* height: 70%; */
+    overflow-y: scroll;
+}
+
+.modalStyle {
+    position: fixed;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 25px;
+    width: 75%;
+    height: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #FFF;
+    z-index: 1000;
+}
+
+.head {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.head button{
+    background-color: transparent;
+    color: #282c34;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+}

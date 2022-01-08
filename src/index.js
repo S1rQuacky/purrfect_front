@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+// import './index.css';
 import "milligram"
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import App from './App';

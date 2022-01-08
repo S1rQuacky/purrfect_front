@@ -1,7 +1,24 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+import '../styles/navbar.scss';
+import Modal from "./Modal";
+
 
 function Nav(props) {
-    return <h1>Nav</h1>
+    const [isOpen, setIsOpen] = React.useState(false);
+
+    return (
+        <header>
+            <nav className="navbar">
+                <div className="logo1"><Link to="/"> Purrfect </Link></div>
+                <div className="logo2"><Link to="/"> &nbsp; Getaway </Link></div>
+                <div className="addBtn">
+                    <button onClick={()=> setIsOpen(true)}>Add your location</button>
+                    <Modal open={isOpen} onClose={()=> setIsOpen(false)} />
+                </div>
+            </nav>
+        </header>
+    )
 };
 
 export default Nav;
