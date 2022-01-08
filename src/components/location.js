@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../styles/main.scss'
 
 function Location ({location}) {
     return (
@@ -8,6 +9,7 @@ function Location ({location}) {
             <h1>{location.name}</h1>
         </Link>
         <h2>{location.description}</h2>
+        <img src={location.photos}></img>
         </div>
     );
 };

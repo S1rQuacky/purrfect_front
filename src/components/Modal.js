@@ -36,7 +36,7 @@ function Modal ({open, onClose}){
             <div className="inputForm"><label htmlFor="name">Name:</label><input onChange={handleChange} value={formData?.name} type="text" id="name" name="name" required /></div>
             <div className="inputForm"><label htmlFor="description">Description:</label><input onChange={handleChange} value={formData?.description} type="text" id="description" name="description" required /></div>
             <div className="inputForm"><label htmlFor="street">Street:</label><input onChange={handleChange} value={formData?.street} type="text" id="street" name="street" required />
-                <label htmlFor="city">&nbsp;City:</label><input onChange={handleChange} value={formData?.city} type="text" id="city" name="City" required />
+                <label htmlFor="city">&nbsp;City:</label><input onChange={handleChange} value={formData?.city} type="text" id="city" name="city" required />
                 <label htmlFor="state">&nbsp;State:</label><input onChange={handleChange} value={formData?.state} type="text" id="state" name="state" required />
                 <label htmlFor="zipcode">&nbsp;Zip:</label><input onChange={handleChange} value={formData?.zipcode} type="text" id="zipcode" name="zipcode" required /></div>
             <div className="inputForm"><label htmlFor="email">eMail:</label><input onChange={handleChange} value={formData?.email} type="text" id="email" name="email" required />

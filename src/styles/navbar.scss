@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Playfair+Display+SC:ital@1&display=swap');
 
-$mainColor: #8a817c;
 
 .navbar{
-    border-bottom: 1px solid rgb(190, 172, 172) rgba(0,0,0,.8);
+    border-bottom: 1px solid rgba(0,0,0,.6);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px clamp(15px, 3%, 50px);
     text-align: center;
-    box-shadow: 0px 1px 10px rgba(0,0,0,.1);
+    box-shadow: 0px 1px 10px rgba(0,0,0,.5);
     margin-bottom: 57px;
     background-color: lightgray;
+    color: black;
 
     top:0;
     width: 100%;
@@ -24,7 +24,7 @@ $mainColor: #8a817c;
         font-family: 'Imperial Script', cursive;
         font-weight: 500;
         letter-spacing: 3px;
-        color: #436db3;
+        
     }
 
     .logo2{
@@ -33,6 +33,15 @@ $mainColor: #8a817c;
         font-family: 'Playfair Display SC', serif;
         font-weight: 500;
         letter-spacing: 3px;
+        
+    }
+
+    .addBtn {
+        color: #3a609c;
+        justify-content: right;
+    }
+
+    a{
         color: #3a609c;
     }
 }

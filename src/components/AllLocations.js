@@ -1,5 +1,6 @@
 import React from "react";
 import Location from "./location";
+import '../styles/main.scss'
 
 function AllLocations(props) {
     const stay = props.getaways.map((location) => {

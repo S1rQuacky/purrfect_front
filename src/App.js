@@ -1,7 +1,6 @@
 //Components
 import Main from "./pages/main";
 import Nav from "./components/nav";
-import LocForm from "./components/LocationForm";
 import ShowLocation from "./pages/locations";
 
 //React and Hooks
