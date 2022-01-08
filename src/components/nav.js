@@ -12,11 +12,12 @@ function Nav(props) {
             <nav className="navbar">
                 <div className="logo1"><Link to="/"> Purrfect </Link></div>
                 <div className="logo2"><Link to="/"> &nbsp; Getaway </Link></div>
-                <div className="addBtn">
+                
+            </nav>
+            <div className="addBtn">
                     <button onClick={()=> setIsOpen(true)}>Add your location</button>
                     <Modal open={isOpen} onClose={()=> setIsOpen(false)} />
                 </div>
-            </nav>
         </header>
     )
 };

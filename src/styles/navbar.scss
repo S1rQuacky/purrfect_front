@@ -36,12 +36,28 @@
         
     }
 
-    .addBtn {
-        color: #3a609c;
-        justify-content: right;
-    }
-
+    
+    
     a{
         color: #3a609c;
     }
 }
+
+.addBtn{
+    display: flex;
+    justify-content: center;
+
+    button{
+        font-family: 'Playfair Display SC', serif;
+        background-color: #edebee;
+        border: none;
+        color: #3a609c;
+        font-weight: 600;
+        font-size: medium;
+    
+    }
+   
+}
+
+   
+ 
